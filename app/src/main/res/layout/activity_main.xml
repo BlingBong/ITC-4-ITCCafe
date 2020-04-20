@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/vg_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vg_bottom"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:text="Mau Pesan Apa?"
+                android:textSize="30sp"
+                android:textColor="#B2FF59"
+                android:fontFamily="cursive"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="#C5E1A5"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_sticky"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="14dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/stickysticky" />
+
+                <TextView
+                    android:id="@+id/tv_judulsticky"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/iv_sticky"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:text="Tusuk Gigi Satuan"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_deskripsisticky"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_judulsticky"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/iv_sticky"
+                    android:maxLines="4"
+                    android:minLines="6"
+                    android:justificationMode="inter_word"
+                    android:text="Terbuat dari ranting pohon pisang pilihan yang digarap dengan sepenuh hati oleh carpenter professional. Berguna untuk membersihkan dosa-dosa yang terselip pada gigi anda."
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_hargasticky"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_deskripsisticky"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/iv_sticky"
+                    android:text="Rp.100"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_tambahsticky"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tv_hargasticky"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#AED581"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/tv_jumlahsticky"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_toLeftOf="@id/btn_tambahsticky"
+                    android:paddingBottom="8dp"
+                    android:text="0"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_kurangsticky"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/tv_jumlahsticky"
+                    android:background="#AED581"
+                    android:text="-" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="#C5E1A5"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_mi"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="14dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/narkoba" />
+
+                <TextView
+                    android:id="@+id/tv_mi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/iv_mi"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:text="Mi Mentah"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_deskripsimi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_mi"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/iv_mi"
+                    android:maxLines="4"
+                    android:minLines="6"
+                    android:justificationMode="inter_word"
+                    android:text="Mi mentah kadaluarsa, tidak termasuk bumbu dan penyedap rasa lainnya. Diperuntukkan bagi penderita kelaparan yang tidak tertahankan."
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_hargami"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_deskripsimi"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/iv_mi"
+                    android:text="Rp.13000"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_tambahmi"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tv_hargami"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#AED581"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/tv_jumlahmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_toLeftOf="@id/btn_tambahmi"
+                    android:paddingBottom="8dp"
+                    android:text="0"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_kurangmi"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/tv_jumlahmi"
+                    android:background="#AED581"
+                    android:text="-" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="#C5E1A5"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_miras"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:layout_marginRight="14dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/air" />
+
+                <TextView
+                    android:id="@+id/tv_miras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/iv_miras"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:text="Miras"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_deskripsimiras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_miras"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/iv_miras"
+                    android:maxLines="4"
+                    android:minLines="6"
+                    android:justificationMode="inter_word"
+                    android:text="Minuman Keras, Miras! Apa pun namamu~ Tak akan kuteguk lagi dan tak akan kuminum lagi walau setetes (kecuali khilaf)."
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_hargamiras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_deskripsimiras"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/iv_miras"
+                    android:text="Rp.69000"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_tambahmiras"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tv_hargamiras"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#AED581"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/tv_jumlahmiras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_toLeftOf="@id/btn_tambahmiras"
+                    android:paddingBottom="8dp"
+                    android:text="0"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_kurangmiras"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/tv_jumlahmiras"
+                    android:background="#AED581"
+                    android:text="-" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/vg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#C5E1A5"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Rp.0"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_purchased"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:text="Purchased"
+                android:textColor="#43A047"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_buy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="#AED581"
+                android:text="Buy" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="#AED581"
+                android:text="Reset" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
